@@ -72,7 +72,6 @@ input {
     font-size: 16px;
     font-weight: bold;
     padding: .5%;
-    padding-left: 0;
     border-top: 1px solid #f2f2f2;
     border-bottom: 1px solid #f2f2f2;
     border-left: none;
@@ -127,4 +126,83 @@ container-flex {
 
 .fa-child {
     margin-left: 3.5px;
+}
+
+.fa-info {
+    padding: .4% .7%;
+    border: 2px solid #f2f2f2;
+    border-radius: 25px;
+    margin-bottom: .5%;
+}
+
+/* card */
+
+.container-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 30px;
+}
+
+.container-hebergements, .container-populaires {
+    padding: 3%;
+    border: 2px solid #f2f2f2;
+    border-radius: 20px;
+}
+
+.container-grid-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 30px;
+}
+
+.card-title {
+    padding-top: 1%;
+    padding-left: 3%;
+}
+
+.grid-item {
+    padding: 1%;
+    margin: 4% 1%;
+    width: 96%;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 20px;
+}
+
+.card-info {
+    padding: 4%;
+    padding-top: 0; 
+}
+
+.illustration-hotel {
+    border-radius: 20px 20px 0 0;
+}
+
+.dénomination {
+    font-weight: bold;
+}
+
+#plus {
+    font-weight: bold;
+    margin-top: 3%;
+    margin-left: 1%;
+}
+
+.bleu {
+    color: #0065fc;
+}
+
+.gris {
+    color: #f2f2f2;
+}
+
+.flex {
+    display: flex;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 20px;
+}
+
+.illustration-hotel-populaires {
+    border-radius: 20px 0 0 20px;
 }
