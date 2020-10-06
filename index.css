@@ -1,5 +1,6 @@
 body {
     font-family: 'Raleway', sans-serif;
+    margin: 1%;
 }
 
 /* Barre de navigation */ 
@@ -69,7 +70,9 @@ h3 {
 input {
     margin-left: 0;
     font-size: 16px;
+    font-weight: bold;
     padding: .5%;
+    padding-left: 0;
     border-top: 1px solid #f2f2f2;
     border-bottom: 1px solid #f2f2f2;
     border-left: none;
@@ -90,4 +93,38 @@ button {
 /* filtres */
 container-flex {
     display: flex;
+}
+
+.filter-flex {
+    margin-right: 1.2%;
+    color: black;
+    padding: .5% 1%;
+    padding-left: 0;
+    font-weight: bold;
+}
+
+.filter {
+    text-decoration: none;
+    border: 2px solid #f2f2f2;
+    border-radius: 25px;
+}
+
+.filter-circle {
+    display: inline-block;
+    color: #0065fc;
+    margin-left: -2px;
+    margin-right: 8px;
+    margin-bottom: 2%;
+    padding: .5%;
+    border: 2px solid #deebff;
+    border-radius: 25px;
+    background: #deebff;
+}
+
+.filter-circle-child {
+    width: 1.1%;
+}
+
+.fa-child {
+    margin-left: 3.5px;
 }
