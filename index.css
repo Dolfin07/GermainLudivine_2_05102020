@@ -7,7 +7,6 @@ body {
 nav {
     width: 100%;
     display: flex;
-    flex-direction: row;
     margin-top: 1%;
 }
 
@@ -48,7 +47,7 @@ a:visited, a:hover {
 }
 
 /* Moteur de recherche */
-h3 {
+.titre {
     margin-bottom: 0;
     font-weight: bold;
 }
@@ -125,25 +124,26 @@ container-flex {
 }
 
 .fa-child {
-    margin-left: 3.5px;
+    margin-left: 3px;
 }
 
 .fa-info {
+    color: #0065fc;
     padding: .4% .7%;
     border: 2px solid #f2f2f2;
     border-radius: 25px;
-    margin-bottom: .5%;
 }
 
 /* card */
-
+/*hébergement */
 .container-grid {
+    margin-top: 2%;
     display: grid;
     grid-template-columns: 2fr 1fr;
     column-gap: 30px;
 }
 
-.container-hebergements, .container-populaires {
+.container-hebergements {
     padding: 3%;
     border: 2px solid #f2f2f2;
     border-radius: 20px;
@@ -156,8 +156,7 @@ container-flex {
 }
 
 .card-title {
-    padding-top: 1%;
-    padding-left: 3%;
+    padding-left: 1.5%;
 }
 
 .grid-item {
@@ -178,14 +177,14 @@ container-flex {
     border-radius: 20px 20px 0 0;
 }
 
-.dénomination {
+.denomination {
     font-weight: bold;
 }
 
 #plus {
     font-weight: bold;
     margin-top: 3%;
-    margin-left: 1%;
+    margin-left: 1.5%;
 }
 
 .bleu {
@@ -196,13 +195,39 @@ container-flex {
     color: #f2f2f2;
 }
 
-.flex {
+/* populaires */
+ .titre-popu {
+    display: inline-block;
+    margin-bottom: 6.8%;
+    font-weight: bold;
+}
+
+.fa-chart-line {
+    margin-left: 45%;
+}
+
+.container-populaires {
+    padding: 5.5%;
+    border: 2px solid #f2f2f2;
+    border-radius: 20px;
+}
+
+.item {
     display: flex;
     background-color: white;
     border: 1px solid white;
     border-radius: 20px;
+    margin-bottom: 5%;
 }
 
 .illustration-hotel-populaires {
     border-radius: 20px 0 0 20px;
+}
+
+.bas {
+    margin-top: 38%;
+}
+
+.card-info-popu {
+    margin-left: 5%;
 }
