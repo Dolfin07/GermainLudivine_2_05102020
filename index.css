@@ -82,7 +82,7 @@ nav a {
 }
 
 input {
-    width: 75%;
+    width: 90%;
     font-size: 18px;
     font-weight: bold;
     border-top: 1px solid #f2f2f2;
@@ -90,6 +90,7 @@ input {
     border-left: none;
     border-right: none;
     padding: 4%;
+    padding-right: 0;
 }
 
 input::placeholder {
@@ -103,8 +104,9 @@ input::placeholder {
     color: white;
     font-weight: bolder;
     border : #0065fc solid 1px;
-    border-radius: 15px;
+    border-radius: 13px;
     padding: 1% 4%;
+    margin-left: -2%;
 }
 
         /*--------Filter flex row one line with flex  for icone + name-------- */
@@ -391,9 +393,12 @@ footer div p {
     
 /* ------------------------Search--------------------- */
     
+    .container-search {
+        margin-left: 3%;
+    }
+    
     .search {
         margin: 3%;
-        margin-left: 0;
     }
     
     #intro {
@@ -414,7 +419,6 @@ footer div p {
     input {
         padding: .5% 3%;
         padding-left: 2%;
-        margin-right: 5%;
         width: 30%;
     }
     
@@ -671,7 +675,7 @@ footer div p {
     }
     
     .search button {
-        width: 10%;
+        width: auto;
     }
     
     /* -----------------------Filter------------------------- */
@@ -833,13 +837,7 @@ footer div p {
     
     .activity-card a img {
         margin-bottom: 0;
-        width: 95%;
-        height: 85%;
-    }
-    
-    .activity-card-group .activity-card img {
-        border: 3px solid blue;
-        height: 100%;
+        width: 100%;
     }
     
     .activity-card-group {
