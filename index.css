@@ -837,8 +837,7 @@ footer div p {
     
        .activity-card a img {
         margin-bottom: 0;
-        width: 95%;
-        height: 85%;
+        width: 100%;
     }
     
     .activity-card-group .activity-card img {
@@ -849,7 +848,6 @@ footer div p {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        width: 90%;
     }
 
     /* -------------------footer-----------------------*/
