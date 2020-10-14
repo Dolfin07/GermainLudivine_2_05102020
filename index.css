@@ -10,12 +10,16 @@ a {
     color: black;
 }
 
-a:visited, a:hover {
-    color: inherit;
-}
-
 h2, h3, h4, span {
     font-family: 'Raleway-ExtraBold', sans-serif;
+}
+
+.bleu {
+    color: #0065fc;
+}
+
+.gris {
+    color: #f2f2f2;
 }
 
         /*-------Nav flex row 2 lines-------- */
@@ -46,7 +50,6 @@ nav a {
 
 #nav-activity {
     width: 50%;
-    color: black;
 }
 
 #nav-inscription {
@@ -82,6 +85,7 @@ nav a {
 input {
     width: 75%;
     font-size: 18px;
+    font-weight: bold;
     border-top: 1px solid #f2f2f2;
     border-bottom: 1px solid #f2f2f2;
     border-left: none;
@@ -90,14 +94,16 @@ input {
 }
 
 input::placeholder {
-    font-family: 'Raleway-ExtraBold', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
 }
 
 .search button {
     background-color: #0065fc;
     color: white;
     font-weight: bolder;
-    border : 1px solid #0065fc;
+    border : #0065fc solid 1px;
     border-radius: 15px;
     padding: 1% 5%;
     margin-left: -5%;
@@ -120,51 +126,54 @@ input::placeholder {
     margin-bottom: 2%;
 }
 
-.filter {
-    display: inline-block;
-    border: 2px solid #deebff;
-    border-radius: 25px;
-    background: #deebff;
-    padding: 10px;
+.fa-stack {
+    color: #0065fc;
+    font-size: 1.5em;
+    margin-left: -35px;
+}
+
+.fa-circle {
+    font-size: 3.5em;
+    color: #deebff;
+    margin-left: -1%;
+}
+.fa-child {
+    margin-left: -32px;
 }
 
 .btn {
-    flex: 0 1 30%;
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
     background-color: #fff;
     border: 3px solid #f2f2f2;
     border-radius: 25px;
-    box-shadow: 0px 0px 0px 5px rgba(white ,0.95);
+    box-shadow: 0px 0px 0px 5px rgba(0, 0, 0, 0);
     margin-top: 4%;
+    height: 3.5em;
+    width: auto;
     transition: .3s all ease-in-out;
 }
 
 .btn:hover {
     background-color: #deebff;
     border: 3px solid #deebff;
-    box-shadow: 0px 0px 10px 3px rgba(95,95,95,0.65);
-}
-
-.btn svg {
-    color: #0065fc;
+    box-shadow: 0px 0px 10px 3px rgba(0,101,252,0.45);
 }
 
 .btn span {
-    font-size: 19px;
-    font-family: 'Raleway-ExtraBold', sans-serif !important;
+    font-size: 18px;
+    font-weight: bolder;
     white-space: nowrap;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 25px;
+    padding-right: 10px;
 }
 
-#container-info {
-    margin-left: 5%;
-    margin-bottom: 8%;
+.container-info span {
+    font-family: 'Raleway', sans-serif;
 }
 
-#info {
+.container-info div {
     display: inline-block;
     border: 2px solid #f2f2f2;
     border-radius: 25px;
@@ -173,14 +182,14 @@ input::placeholder {
     margin-top: 8%;
 }
 
-        /*---------Container global section flex 2 col---------- */
+        /*---------Container---------- */
 .container-flex {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-        /* -------Popu flex 1 col + flex row for card--------- */
+        /* -------Popu--------- */
 
 .container-popu {
     display: flex;
@@ -243,8 +252,8 @@ input::placeholder {
     margin-right: .5%;
 }
 
+        /*--------Location---------- */
 
-        /*--------Location flex 1 col + flex 2 col per card---------- */
 .container-location {
     display: flex;
     flex-direction: column;
@@ -256,7 +265,6 @@ input::placeholder {
 .container-location h2 {
     margin-top: 10%;
     margin-bottom: 4%;
-    padding-left: 5%;
 }
 
 .card-location {
@@ -298,14 +306,6 @@ input::placeholder {
 .card-info-location div svg {
     margin-top: 1%;
     margin-right: .5%;
-}
-
-.bleu {
-    color: #0065fc;
-}
-
-.gris {
-    color: #f2f2f2;
 }
 
 #plus {
@@ -382,6 +382,14 @@ footer div p {
 /*------------------------------------------- TABLET------------------------------------------------------------------*/
 @media all and (min-width: 768px) {
     
+    h4 {
+        font-size: 20px;
+    }
+    
+    p, span {
+        font-size: 17px;
+    }
+    
 /* ------------------------Search--------------------- */
     
     .search {
@@ -435,18 +443,19 @@ footer div p {
         margin-bottom: 0
     }
     
-    
-    
-    
-    #container-info {
-        margin: 3%;
+    .btn {
+        height: 3.5em;
     }
     
-    #info {
-        margin: 0;
-        margin-left: 3%;
-        padding: 2px 10px;
-        padding-bottom: 4px;
+    .btn span {
+        font-size: 22px;
+        padding-right: 20px;
+        padding-left: 25px;
+    }
+    
+    .container-info div{
+        padding: .4% 1.5% .8% 1.5%;
+        margin: 3%;
     }
     
     /*----------------------Location-----------------*/
@@ -502,11 +511,12 @@ footer div p {
     }
 /*------------------------Activities------------------------*/
 
-        .title-activity {
+    .title-activity {
         margin: 5% 0 2% 5%;
     }
     
-      #container-activity img{
+    .activity-card img{
+        width: 100%;
         height: 300px;
     }
     
@@ -592,6 +602,10 @@ footer div p {
 /*---------------------------------------------------- DESKTOP -------------------------------------------------------------*/
 @media all and (min-width: 992px) {
     
+    h4 {
+        font-size: 18px;
+    }
+    
     /*-------------------- Nav --------------------------*/
     
     nav {
@@ -607,7 +621,7 @@ footer div p {
         margin:0;
         padding: 0;
         padding-top: 3%;
-        width: 20%;
+        width: 25%;
     }
     
     #nav-inscription {
@@ -637,6 +651,7 @@ footer div p {
     
     .search {
         margin: 2%;
+        margin-left: 3%;
     }
     
     .search-flex {
@@ -667,19 +682,36 @@ footer div p {
         align-self: center;
         padding : 0;
         padding-right: 3%;
+        font-size: 22px;
         width: auto;
     }
     
-    .container-filter button{
-        flex: 0;
-        margin-right: 3%;
-    }
-    
-    .container-filter button span {
-        font-size: 20px;
+    .fa-stack {
+    font-size: 1.8em;
+    margin-left: -37px;
     }
 
-    #container-info {
+    .fa-circle {
+        font-size: 3.5em;
+        margin-left: -1%;
+    }
+    .fa-child {
+        margin-left: -32px;
+    }
+
+    .btn {
+        margin-top: 4%;
+        height: 3.5em;
+    }
+
+    .btn span {
+        font-size: 22px;
+        padding-left: 30px;
+        padding-right: 20px;
+    }
+
+    .container-info div{
+        padding: .4% .8% .4% .8%;
         margin: 0;
     }
 
@@ -713,8 +745,9 @@ footer div p {
     }
 
     .container-location h2 {
-        margin-bottom: 0;
+        margin-bottom: 1.5%;
         margin-top: 5%;
+        margin-left: 1%;
     }
 
     .card-location {
@@ -735,29 +768,34 @@ footer div p {
     
     /*--------------Popu--------------------*/
     
-      .title-popu{
-        width: 80%;
+    .title-popu{
+        width: 100%;
         margin-top: 8%;
     }
     
     .container-popu {
-        width: 32%;
+        width: 33%;
         margin-left: 0;
         margin-right: 0;
     }
     
     .card-popu {
         flex-direction: row;
+        padding-right: 8%;
     }
     
     .card-popu img {
-        width: 40%;
+        width: 38%;
+        border-radius: 25px 0 0 25px;
     }
     
-    .card-popu-info div {
+    .card-info-popu div {
         margin-top: 25%;
     }
     
+    .card-info-popu {
+        padding-left: 10%;
+    }
     /*------------------------Activities------------------------*/
     
     .activity {
@@ -790,6 +828,7 @@ footer div p {
     .activity-card img {
         margin-bottom: 0;
         width: 100%;
+        height: auto;
     }
     
     .activity-card-group {
@@ -811,9 +850,9 @@ footer div p {
     
     footer div {
         margin: 0;
-        margin-right: 22%;
+        margin-right: 20%;
         margin-top: 4%;
-        margin-bottom: -2%;
+        margin-bottom: -3%;
     }
     
     footer div h4{
