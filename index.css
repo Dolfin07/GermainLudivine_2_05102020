@@ -835,9 +835,10 @@ footer div p {
         margin-bottom: 0;
     }
     
-       .activity-card a img {
+    .activity-card a img {
         margin-bottom: 0;
         width: 100%;
+        height: auto;
     }
     
     .activity-card-group .activity-card img {
