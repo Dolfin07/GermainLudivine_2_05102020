@@ -51,8 +51,8 @@
                     <span>Romantique</span>
                 </button>
                 <button class="btn" type="submit">
-                       <i class="fas fa-circle fa-stack"></i>
-                        <i class="fas fa-dog fa-stack"></i>
+                    <i class="fas fa-circle fa-stack"></i>
+                    <i class="fas fa-dog fa-stack"></i>
                     <span>Animaux autorisés</span>
                 </button>
             </div>
@@ -74,8 +74,19 @@
 
                     <a href="#">
                         <div class="card-popu">
-                            <img 
-                            src="images/hebergements/hotel-le-soleil-du-matin.jpg" alt="illustration Hôtel Le soleil du matin" id="hotel-soleil">
+                           <picture>
+                              <source 
+                                media="(max-width: 767px)" 
+                                srcset="images/hebergements/hotel-le-soleil-du-matin.jpg">
+                              <source 
+                                      media="(max-width: 1023px)" 
+                                      srcset="images/hebergements/hotel-le-soleil-du-matin-tablet.jpg">
+                                <source
+                                    media="(min-width: 1024px)"
+                                    srcset="images/hebergements/hotel-le-soleil-du-matin.jpg">
+                              <img src="images/hebergements/hotel-le-soleil-du-matin.jpg">
+                            </picture>
+                           
                             <div class="card-info-popu">
                                 <h4>Hôtel Le soleil du matin</h4>
                                 <p>Nuit à partir de 128<span>€</span></p>
@@ -92,7 +103,18 @@
 
                     <a href="#">
                         <div class="card-popu">
-                            <img src="images/hebergements/au-coeur-de-l-eau.jpg" alt="illustration Hôtel Au coeur de l'eau" id="coeur-eau">
+                            <picture>
+                              <source 
+                                media="(max-width: 767px)" 
+                                srcset="images/hebergements/au-coeur-de-l-eau.jpg">
+                              <source 
+                                      media="(max-width: 1023px)" 
+                                      srcset="images/hebergements/au-coeur-de-l-eau-tablet.jpg">
+                                <source
+                                    media="(min-width: 1024px)"
+                                    srcset="images/hebergements/au-coeur-de-l-eau.jpg">
+                              <img src="images/hebergements/au-coeur-de-l-eau.jpg">
+                            </picture>
                             <div class="card-info-popu">
                                 <h4>Au coeur de l'eau Chambres d'hôtes</h4>
                                 <p>Nuit à partir de 71<span>€</span></p>
@@ -109,7 +131,18 @@
 
                     <a href="#">
                         <div class="card-popu">
-                            <img src="images/hebergements/hotel-tout-bleu-et-blanc.jpg" alt="illustration Hôtel Tout bleu et Blanc" id="hotel-bleu-blanc">
+                            <picture>
+                                <source 
+                                    media="(max-width: 767px)" 
+                                    srcset="images/hebergements/hotel-tout-bleu-et-blanc.jpg">
+                                <source 
+                                    media="(max-width: 1023px)" 
+                                    srcset="images/hebergements/hotel-tout-bleu-et-blanc-tablet.jpg">
+                                <source
+                                    media="(min-width: 1024px)"
+                                    srcset="images/hebergements/hotel-tout-bleu-et-blanc.jpg">
+                                <img src="images/hebergements/hotel-tout-bleu-et-blanc.jpg">
+                            </picture>
                             <div class="card-info-popu">
                                 <h4>Hôtel Tout bleu et Blanc</h4>
                                 <p>Nuit à partir de 68<span>€</span></p>
@@ -128,25 +161,48 @@
 
                 <div class="container-location" id="location">
                     <h2>Hébergements à Marseille</h2>
-                        <div class="card-location">
-                            <a href="#">
-                                <img src="images/hebergements/auberge-la-cannebiere-mobile.jpg" alt="illustration Auberge la Cannebière" id="auberge-cannebiere">
-                                <div class="card-info-location">
-                                    <h4>Auberge la Cannebière</h4>
-                                    <p>Nuit à partir de <span>25€</span></p>
-                                    <div>
-                                        <i class="fas fa-star bleu fa-xs"></i>
-                                        <i class="fas fa-star bleu fa-xs"></i>
-                                        <i class="fas fa-star bleu fa-xs"></i>
-                                        <i class="fas fa-star bleu fa-xs"></i>
-                                        <i class="fas fa-star gris fa-xs"></i>
+                        
+                            <div class="card-location">
+                                <a href="#"> 
+                                    <picture>
+                                        <source 
+                                            media="(max-width: 767px)" 
+                                            srcset="images/hebergements/auberge-la-cannebiere-mobile.jpg">
+                                        <source 
+                                            media="(max-width: 1023px)" 
+                                            srcset="images/hebergements/auberge-la-cannebiere-tablet.jpg">
+                                        <source
+                                            media="(min-width: 1024px)"
+                                            srcset="images/hebergements/auberge-la-cannebiere.jpg">
+                                        <img src="images/hebergements/auberge-la-cannebiere-mobile.jpg">
+                                    </picture>
+                                    <div class="card-info-location">
+                                        <h4>Auberge la Cannebière</h4>
+                                        <p>Nuit à partir de <span>25€</span></p>
+                                        <div>
+                                            <i class="fas fa-star bleu fa-xs"></i>
+                                            <i class="fas fa-star bleu fa-xs"></i>
+                                            <i class="fas fa-star bleu fa-xs"></i>
+                                            <i class="fas fa-star bleu fa-xs"></i>
+                                            <i class="fas fa-star gris fa-xs"></i>
+                                        </div>
                                     </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="card-location">
-                            <a href="#">
-                                <img src="images/hebergements/hotel-du-port-mobile.jpg" alt="illustration Hôtel du port" id="hotel-port">
+                                </a>
+                            </div>
+                            <div class="card-location">
+                               <a href="#">
+                                <picture>
+                                    <source 
+                                        media="(max-width: 767px)" 
+                                        srcset="images/hebergements/hotel-du-port-mobile.jpg">
+                                    <source 
+                                        media="(max-width: 1023px)" 
+                                        srcset="images/hebergements/hotel-du-port-tablet.jpg">
+                                    <source
+                                        media="(min-width: 1024px)"
+                                        srcset="images/hebergements/hotel-du-port.jpg">
+                                    <img src="images/hebergements/hotel-du-port-mobile.jpg">
+                                </picture>
                                 <div class="card-info-location">
 
                                     <h4>Hôtel du port</h4>
@@ -158,72 +214,118 @@
                                         <i class="fas fa-star bleu fa-xs"></i>
                                         <i class="fas fa-star bleu fa-xs"></i>
                                     </div>
-                                </div>              
-                            </a>
-                        </div>
-                        <div class="card-location">
-                            <a href="#">
-                                <img src="images/hebergements/hotel-les-mouettes-mobile.jpg" alt="illustration Hôtel les mouettes" id="hotel-mouettes">
-                                <div class="card-info-location">
-                                    <h4>Hôtel Les mouettes</h4>
-                                    <p>Nuit à partir de 76<span>€</span></p>
-                                    <div>
-                                       <i class="fas fa-star bleu fa-xs"></i>
-                                        <i class="fas fa-star bleu fa-xs"></i>
-                                        <i class="fas fa-star bleu fa-xs"></i>
-                                        <i class="fas fa-star bleu fa-xs"></i>
-                                        <i class="fas fa-star gris fa-xs"></i>
-                                    </div>
                                 </div>
-                            </a>
-                        </div>
-                        <div class="card-location">
-                            <a href="#">
-                            <img src="images/hebergements/hotel-de-la-mer-mobile.jpg" alt="illustration Hôtel de la mer" id="hotel-mer">
-                            <div class="card-info-location">
-                                <h4>Hôtel de la mer</h4>
-                                <p>Nuit à partir de 46<span>€</span></p>
-                                <div>
-                                    <i class="fas fa-star bleu fa-xs"></i>
-                                    <i class="fas fa-star bleu fa-xs"></i>
-                                    <i class="fas fa-star bleu fa-xs"></i>
-                                    <i class="fas fa-star gris fa-xs"></i>
-                                    <i class="fas fa-star gris fa-xs"></i>
-                                </div>
+                                </a>           
                             </div>
-                        </a></div>
-                        <div class="card-location">
-                            <a href="#">
-                                <img src="images/hebergements/auberge-le-panier-mobile.jpg" alt="illustration Auberge le Panier" id="auberge-panier">
-                                <div class="card-info-location">
-                                    <h4>Auberge le Panier</h4>
-                                    <p>Nuit à partir de <span>23€</span></p>
-                                    <div>
-                                        <i class="fas fa-star bleu fa-xs"></i>
-                                        <i class="fas fa-star bleu fa-xs"></i>
-                                        <i class="fas fa-star bleu fa-xs"></i>
-                                        <i class="fas fa-star bleu fa-xs"></i>
-                                        <i class="fas fa-star gris fa-xs"></i>
+                            <div class="card-location">
+                             <a href="#">
+                                    <picture>
+                                        <source 
+                                            media="(max-width: 767px)" 
+                                            srcset="images/hebergements/hotel-les-mouettes-mobile.jpg">
+                                        <source 
+                                            media="(max-width: 1023px)" 
+                                            srcset="images/hebergements/hotel-les-mouettes-tablet.jpg">
+                                        <source
+                                            media="(min-width: 1024px)"
+                                            srcset="images/hebergements/hotel-les-mouettes.jpg">
+                                        <img src="images/hebergements/hotel-les-mouettes-mobile.jpg">
+                                    </picture>
+                                    <div class="card-info-location">
+                                        <h4>Hôtel Les mouettes</h4>
+                                        <p>Nuit à partir de 76<span>€</span></p>
+                                        <div>
+                                           <i class="fas fa-star bleu fa-xs"></i>
+                                            <i class="fas fa-star bleu fa-xs"></i>
+                                            <i class="fas fa-star bleu fa-xs"></i>
+                                            <i class="fas fa-star bleu fa-xs"></i>
+                                            <i class="fas fa-star gris fa-xs"></i>
+                                        </div>
                                     </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="card-location">
-                            <a href="#">
-                                <img src="images/hebergements/hotel-chez-amina-mobile.jpg" alt="illustration Hôtel chez Amina" id="hotel-amina">
-                                <div class="card-info-location">
-                                    <h4>Hôtel chez Amina</h4>
-                                    <p>Nuit à partir de 96<span>€</span></p>
-                                    <div>
-                                        <i class="fas fa-star bleu fa-xs"></i>
-                                        <i class="fas fa-star bleu fa-xs"></i>
-                                        <i class="fas fa-star bleu fa-xs"></i>
-                                        <i class="fas fa-star bleu fa-xs"></i>
-                                        <i class="fas fa-star bleu fa-xs"></i>
+                                </a>
+                            </div>
+                            <div class="card-location">
+                                <a href="#">
+                                    <picture>
+                                            <source 
+                                                media="(max-width: 767px)" 
+                                                srcset="images/hebergements/hotel-chez-mer-mobile.jpg">
+                                            <source 
+                                                media="(max-width: 1023px)" 
+                                                srcset="images/hebergements/hotel-de-la-mer-tablet.jpg">
+                                            <source
+                                                media="(min-width: 1024px)"
+                                                srcset="images/hebergements/hotel-de-la-mer.jpg">
+                                            <img src="images/hebergements/hotel-de-la-mer-mobile.jpg">
+                                    </picture>
+                                    <div class="card-info-location">
+                                        <h4>Hôtel de la mer</h4>
+                                        <p>Nuit à partir de 46<span>€</span></p>
+                                        <div>
+                                            <i class="fas fa-star bleu fa-xs"></i>
+                                            <i class="fas fa-star bleu fa-xs"></i>
+                                            <i class="fas fa-star bleu fa-xs"></i>
+                                            <i class="fas fa-star gris fa-xs"></i>
+                                            <i class="fas fa-star gris fa-xs"></i>
+                                        </div>
                                     </div>
-                                </div>
-                            </a>
-                        </div>
+                                </a>
+                            </div>
+
+                            <div class="card-location">
+                                <a href="#">
+                                    <picture>
+                                        <source 
+                                            media="(max-width: 767px)" 
+                                            srcset="images/hebergements/auberge-le-panier-mobile.jpg">
+                                        <source 
+                                            media="(max-width: 1023px)" 
+                                            srcset="images/hebergements/auberge-le-panier-tablet.jpg">
+                                        <source
+                                            media="(min-width: 1024px)"
+                                            srcset="images/hebergements/auberge-le-panier.jpg">
+                                        <img src="images/hebergements/auberge-le-panier-mobile.jpg">
+                                    </picture>
+                                    <div class="card-info-location">
+                                        <h4>Auberge le Panier</h4>
+                                        <p>Nuit à partir de <span>23€</span></p>
+                                        <div>
+                                            <i class="fas fa-star bleu fa-xs"></i>
+                                            <i class="fas fa-star bleu fa-xs"></i>
+                                            <i class="fas fa-star bleu fa-xs"></i>
+                                            <i class="fas fa-star bleu fa-xs"></i>
+                                            <i class="fas fa-star gris fa-xs"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="card-location">
+                                <a href="#">
+                                    <picture>
+                                        <source 
+                                            media="(max-width: 767px)" 
+                                            srcset="images/hebergements/hotel-chez-amina-mobile.jpg">
+                                        <source 
+                                            media="(max-width: 1023px)" 
+                                            srcset="images/hebergements/hotel-chez-amina-tablet.jpg">
+                                        <source
+                                            media="(min-width: 1024px)"
+                                            srcset="images/hebergements/hotel-chez-amina.jpg">
+                                        <img src="images/hebergements/hotel-chez-amina-mobile.jpg">
+                                    </picture>
+                                    <div class="card-info-location">
+                                        <h4>Hôtel chez Amina</h4>
+                                        <p>Nuit à partir de 96<span>€</span></p>
+                                        <div>
+                                            <i class="fas fa-star bleu fa-xs"></i>
+                                            <i class="fas fa-star bleu fa-xs"></i>
+                                            <i class="fas fa-star bleu fa-xs"></i>
+                                            <i class="fas fa-star bleu fa-xs"></i>
+                                            <i class="fas fa-star bleu fa-xs"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
                     <h4 id="plus">Afficher plus</h4>
                 </div>
 
@@ -234,12 +336,18 @@
             <div class="container-activity" id="activity">
                 <div class="activity-card item">
                     <a href="#">
-                        <img 
-                        src="images/activites/vieux-port-mobile.jpg" alt="Illustration vieux port"
-                        srcset="images/activites/vieux-port-mobile.jpg 330w, 
-                                images/activites/vieux-port.jpg 450w, 
-                                images/activites/vieux-port-tablet.jpg 700w"
-                        sizes="(min-width: 991px) 22vw, 100vw">
+                        <picture>
+                            <source 
+                                media="(max-width: 767px)" 
+                                srcset="images/activites/vieux-port-mobile.jpg">
+                            <source 
+                                media="(max-width: 1023px)" 
+                                srcset="images/activites/vieux-port-tablet.jpg">
+                            <source
+                                media="(min-width: 1024px)"
+                                srcset="images/activites/vieux-port.jpg">
+                            <img src="images/activites/vieux-port-mobile.jpg" alt="Illustration vieux port">
+                        </picture>
                         <h4>Vieux port</h4>
                     </a>
                 </div>
@@ -255,7 +363,7 @@
                             <h4>Fort de Pomègues</h4>
                         </a>
                     </div>
-                    <div class="activity-card frioul">
+                    <div class="activity-card frioul-container">
                         <a href="#">
                             <img 
                                 src="images/activites/iles-du-frioul-mobile.jpg" alt="Illustration îles du Frioul" class="frioul-img"
@@ -279,7 +387,7 @@
                     </a>
                 </div>
                 <div class="activity-card-group item">
-                    <div class="activity-card notre-dame">
+                    <div class="activity-card notre-dame-container">
                         <a href="#">
                             <img src="images/activites/notre-dame-de-la-garde-mobile.jpg" alt="Illustration de Notre-Dame-de-la-Garde" class="notre-dame-img"
                             srcset="images/activites/notre-dame-de-la-garde-mobile.jpg 310w
