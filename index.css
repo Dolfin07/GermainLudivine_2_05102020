@@ -500,21 +500,20 @@ footer div p {
     }
 
     .card-popu {
-        flex-direction: column;
-        margin-top: 9%;
+        height: 300px;
+        margin-top: 5%;
     }
     
     .card-popu img {
         border-radius: 20px 20px 0 0;
-        width: 100%;
     }
     
     .card-info-popu h4 {
+        margin-top: 10%;
         margin-left: 0;
     }
     
     .card-info-popu div {
-        margin-top: 2%
     }
     
     .card-info-popu p {
@@ -527,9 +526,7 @@ footer div p {
     }
     
     .activity-card img{
-        object-fit: cover;
         width: 100%;
-        height: 300px;
     }
     
 /* -------------------footer-----------------------*/
@@ -587,29 +584,6 @@ footer div p {
     #hotel-bleu-blanc {
         content: url(images/hebergements/hotel-tout-bleu-et-blanc-tablet.jpg)
     }
-    
-    /*--------------Activity ----------------*/
-    
-    #vieux-port {
-        content: url(images/activites/vieux-port-tablet.jpg);
-    }
-    #fort-pomegues {
-        content: url(images/activites/fort-de-pomegues-tablet.jpg);
-    }
-    #iles-frioul {
-        content: url(images/activites/iles-du-frioul-tablet.jpg);
-    }
-    #calanques {
-        content: url(images/activites/parc-national-des-calanques-tablet.jpg);
-    }
-    #notre-dame {
-        content: url(images/activites/notre-dame-de-la-garde-tablet.jpg);
-    }
-    #longchamp {
-        content: url(images/activites/parc-longchamp-tablet.jpg);
-    }
-
-}
 
 /*---------------------------------------------------- DESKTOP -------------------------------------------------------------*/
 @media all and (min-width: 992px) {
@@ -828,29 +802,38 @@ footer div p {
     }
     
     .item:first-child {
-        margin-left: 0;
-    }
-    
-    .activity-card {
-        margin-bottom: 0;
+        margin-left:0;
     }
     
     .activity-card a img {
         margin-bottom: 0;
-        width: 100%;
-        height: auto;
     }
     
-    .activity-card-group .activity-card img {
-        height: 100%;
+    .frioul {
+        height: 40%;
+        margin-bottom: -1%;
     }
     
-    .activity-card-group {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+    .frioul-img {
+        height: 70%;
+    }
+    
+    .notre-dame {
+        height: 45%;
+    }
+    
+    .notre-dame-img {
+        height: 80%;
     }
 
+    .longchamp {
+        height: 45%;
+        margin-bottom: -1%;
+    }
+    
+    .longchamp-img {
+        height: 75%;
+    }
     /* -------------------footer-----------------------*/
     
     footer {
@@ -906,26 +889,3 @@ footer div p {
     #hotel-amina {
         content: url(images/hebergements/hotel-chez-amina.jpg);
     }
-    
-    /* ----Activities--- */
-    
-    #vieux-port {
-                content: "";
-        content: url(images/activites/vieux-port.jpg);
-    }
-    #fort-pomegues {
-        content: url(images/activites/fort-de-pomegues.jpg);
-    }
-    #iles-frioul {
-        content: url(images/activites/iles-du-frioul.jpg);
-    }
-    #calanques {
-        content: url(images/activites/parc-national-des-calanques.jpg);
-    }
-    #notre-dame {
-        content: url(images/activites/notre-dame-de-la-garde.jpg);
-    }
-    #longchamp {
-        content: url(images/activites/parc-longchamp.jpg);
-    }
-}
