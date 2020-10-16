@@ -67,8 +67,6 @@ nav a {
 .container-search {
     width: 90%;
     margin-left: 5%;
-    margin-right: 5%;
-    margin-top: 5%;
 }
 
 .search h2 {
@@ -87,19 +85,18 @@ nav a {
 }
 
 input {
-    width: 90%;
-    font-size: 18px;
+    width: 60%;
+    font-size: 1.2em;
     font-weight: bold;
     border-top: 1px solid #f2f2f2;
     border-bottom: 1px solid #f2f2f2;
     border-left: none;
     border-right: none;
-    padding: 4%;
-    padding-right: 0;
+    padding-left: 2%;
 }
 
 input::placeholder {
-    font-size: 18px;
+    font-size: 1em;
     font-weight: bold;
     color: black;
 }
@@ -110,7 +107,7 @@ input::placeholder {
     font-weight: bolder;
     border : #0065fc solid 1px;
     border-radius: 13px;
-    padding: 1% 3.5%;
+    padding: 1.5% 4%;
     margin-left: -2%;
 }
 
@@ -168,7 +165,7 @@ input::placeholder {
 }
 
 .btn span {
-    font-size: 18px;
+    font-size: 1.5em;
     font-weight: bolder;
     white-space: nowrap;
     padding-left: 20px;
@@ -227,6 +224,11 @@ input::placeholder {
     margin: 1.5% 0;
 }
 
+.card-popu picture {
+    display: inline-block;
+    width: 50%;
+}
+
 .card-popu img {
     width: 80%;
     border-radius: 20px 0 0 20px;
@@ -237,11 +239,11 @@ input::placeholder {
 }
 
 .card-info-popu h4 {
-    margin: 6% 0 2% 2%;
+    margin: 5% 0 2% 0%;
 }
 
 .card-info-popu p {
-    font-size: 14px;
+    font-size: .8em;
 }
 
 .card-info-popu p span {
@@ -250,7 +252,7 @@ input::placeholder {
 
 .card-info-popu div {
     display: flex;
-    margin-top: 25%;
+    margin-top: 30%;
 }
 
 .card-info-popu div svg {
@@ -297,7 +299,7 @@ input::placeholder {
 .card-info-location p {
     padding-top: 1%;
     padding-bottom: 1%;
-    font-size: 14px;
+    font-size: .8em;
 }
 
 .card-info-location span {
@@ -387,19 +389,16 @@ footer div p {
 
 /*------------------------------------------- TABLET------------------------------------------------------------------*/
 @media all and (min-width: 768px) {
-    
-    h4 {
-        font-size: 20px;
-    }
-    
-    p, span {
-        font-size: 17px;
-    }
+
     
 /* ------------------------Search--------------------- */
     
     .container-search {
         margin-left: 3%;
+    }
+    
+    .container-search h2 {
+        font-size: 2em;
     }
     
     .search {
@@ -417,7 +416,7 @@ footer div p {
     }
     
     #localisation {
-        padding: 1% 2%;
+        padding: 2% 2%;
         margin-left: 0;
     }
     
@@ -428,7 +427,7 @@ footer div p {
     }
     
     .search button {
-        width: 18%;
+        width: auto;
         border-radius: 0 15px 15px 0;
         padding-left: 2%;
         margin-right: -3%;
@@ -436,7 +435,8 @@ footer div p {
     
     .search button::before {
         content: "Rechercher";
-        font-size: 18px;
+        font-size: 1.5em;
+        padding-left: 1%;
     }        
     
     .search button svg {
@@ -446,7 +446,12 @@ footer div p {
     
     /*-----------------Filter--------------------- */ 
     
+    .container-filter {
+        margin-left: 3%;
+    }
+    
     .filter-title {
+        font-size: 1.5em;
         margin-top: 4%;
         margin-bottom: 0
     }
@@ -469,17 +474,22 @@ footer div p {
     /*----------------------Location-----------------*/
     
     .container-location h2 {
+        font-size: 1.7em;
         width: 100%;
         margin-bottom: 3%;
         margin-top: 0;
         padding-left: 2%;
     }
     
+    .card-info-location h4{
+        font-size: 1.4em;
+    }
     .card-info-location p {
-        font-size: 17px;
+        font-size: 1em;
     }
     
     #plus {
+        font-size: 1.4em;
         margin-top: 3%;
     }
     
@@ -503,19 +513,31 @@ footer div p {
         margin-top: 8%;
         margin-bottom: 0;
     }
+    
+    .title-popu h2 {
+        font-size: 1.7em;
+    }
 
     .card-popu {
         flex-direction: column;
         margin-top: 9%;
     }
     
+    .card-popu picture {
+        width: 100%;
+    }
+    
     .card-popu img {
         border-radius: 20px 20px 0 0;
         width: 100%;
-        object-fit: fill;    
+    }
+    
+    .card-info-popu {
+        margin-left: 2%;
     }
     
     .card-info-popu h4 {
+        font-size: 1.4em;
         margin-left: 0;
     }
     
@@ -524,7 +546,7 @@ footer div p {
     }
     
     .card-info-popu p {
-        font-size: 17px;
+        font-size: 1em;
     }
 /*------------------------Activities------------------------*/
 
@@ -532,8 +554,18 @@ footer div p {
         margin: 5% 0 2% 5%;
     }
     
+    .title-activity h2 {
+        font-size: 1.7em;
+    }
+    
     .activity-card img{
         width: 100%;
+    }
+    
+    .activity-card h4 {
+        font-size: 1.4em;
+        margin-top: 0;
+        margin-bottom: 2%;
     }
     
 /* -------------------footer-----------------------*/
@@ -556,29 +588,6 @@ footer div p {
     footer div h4{
         font-family: 'Raleway-ExtraBold', sans-serif;
     }
-    
-    /* -------------------Resize images --------------------*/
-
-    /* -----------------Location -------------*/
-    
-   #auberge-cannebiere {
-        content: url(images/hebergements/auberge-la-cannebiere-tablet.jpg);
-    }
-    #hotel-port {
-        content: url(images/hebergements/hotel-du-port-tablet.jpg);
-    }
-    #hotel-mouettes {
-        content: url(images/hebergements/hotel-les-mouettes-tablet.jpg);
-    }
-    #hotel-mer {
-        content: url(images/hebergements/hotel-de-la-mer-tablet.jpg);
-    }
-    #auberge-panier {
-        content: url(images/hebergements/auberge-le-panier-tablet.jpg);
-    }
-    #hotel-amina {
-        content: url(images/hebergements/hotel-chez-amina-tablet.jpg);
-    }
 
 /*---------------------------------------------------- DESKTOP -------------------------------------------------------------*/
 @media all and (min-width: 1024px) {
@@ -588,11 +597,7 @@ footer div p {
         margin: 0 auto;
         margin-top: 1%;
     }
-    
-    h4 {
-        font-size: 18px;
-    }
-    
+
     /*-------------------- Nav --------------------------*/
     
     nav {
@@ -626,6 +631,8 @@ footer div p {
         border-top: 1px solid #0065fc;
         border-bottom: none;
         padding-top: 3%;
+        padding-right: 5%;
+        padding-left: -3%;
     }
     
     #nav-activity {
@@ -638,6 +645,11 @@ footer div p {
     
     .search {
         margin: 2%;
+        margin-bottom: 4%;
+    }
+    
+    #localisation {
+        padding: 1% 1.5%;
     }
     
     .search-flex {
@@ -646,10 +658,12 @@ footer div p {
     }
     
     input {
-        width: 22%;
+        padding: 1%;
+        width: 24%;
     }
     
     .search button {
+        padding: 1%;
         width: auto;
     }
     
@@ -661,13 +675,14 @@ footer div p {
         justify-content: space-between;
         width: 70%;
         margin-bottom: 2%;
+        margin-left: 0;
     }
     
     .filter-title {
         align-self: center;
         padding : 0;
         padding-right: 2%;
-        font-size: 22px;
+        font-size: 19px;
         width: auto;
     }
     
@@ -691,7 +706,7 @@ footer div p {
     }
 
     .btn span {
-        font-size: 20px;
+        font-size: 19px;
         padding-left: 30px;
         padding-right: 20px;
     }
@@ -728,10 +743,12 @@ footer div p {
         border-radius: 20px;
         background-color: #f2f2f2;
         margin-left: 0;
+        margin-bottom: 0;
     }
 
     .container-location h2 {
-        margin-bottom: 1.5%;
+        font-size: 2em;
+        margin-bottom: 0;
         margin-top: 5%;
         margin-left: 1%;
     }
@@ -752,7 +769,16 @@ footer div p {
     }
     
     .card-info-location {
+        padding-left: 0;
         padding-bottom: 0;
+    }
+    
+    .card-info-location h4 {
+        font-size: 1.8em;
+    }
+    
+    .card-info-location p {
+        font-size: 1.3em;;
     }
     
     #plus {
@@ -766,30 +792,47 @@ footer div p {
     .title-popu{
         width: 100%;
         margin-top: 8%;
+        margin-bottom: 9%;
     }
     
     .container-popu {
         width: 34%;
         margin-left: 0;
         margin-right: 0;
+        padding-left: 1.5%;
+        padding-right: 1.5%;
     }
     
     .card-popu {
+        margin-right: 0;
         flex-direction: row;
-        padding-right: 8%;
+    }
+    
+    .card-popu h4 {
+        font-size: 1.3em;
+    }
+    
+    .card-popu picture {
+        width: 80%;
     }
     
     .card-popu img {
+        width: 80%;
         border-radius: 25px 0 0 25px;
+    }
+    .card-info-popu {
+        margin-left: -5%;
+        padding-right: 4%;
+    }
+    
+    .card-info-popu p {
+        font-size: 1.1em;
     }
     
     .card-info-popu div {
         margin-top: 15%;
     }
-    
-    .card-info-popu {
-        padding-left: 10%;
-    }
+
     /*------------------------Activities------------------------*/
     
     .activity {
@@ -819,8 +862,7 @@ footer div p {
         margin-bottom: 0;
     }
     
-    .frioul {
-        height: %;
+    .frioul-container {
         margin-bottom: -1%;
     }
     
@@ -828,7 +870,7 @@ footer div p {
         height: 70%;
     }
     
-    .notre-dame {
+    .notre-dame-container {
         height: 45%;
     }
     
@@ -843,6 +885,11 @@ footer div p {
     
     .longchamp-img {
         height: 75%;
+    }
+    
+    .activity-card h4 {
+        font-size: 1.3em;
+        margin-top: 2%;;
     }
     /* -------------------footer-----------------------*/
     
@@ -863,39 +910,4 @@ footer div p {
     
     footer div h4{
         font-family: 'Raleway-ExtraBold', sans-serif;
-    }
-    
-    /* -------------------Resize images --------------------*/
-    
-       /* ----------Popu-----------------*/
-    
-    #hotel-soleil {
-        content: url(images/hebergements/hotel-le-soleil-du-matin.jpg);
-    }
-    #coeur-eau {
-        content: url(images/hebergements/au-coeur-de-l-eau.jpg);
-    }
-    #hotel-bleu-blanc {
-        content: url(images/hebergements/hotel-tout-bleu-et-blanc.jpg)
-    }
-    
-    /* ---Location ---*/
-    
-    #auberge-cannebiere {
-        content: url(images/hebergements/auberge-la-cannebiere.jpg);
-    }
-    #hotel-port {
-        content: url(images/hebergements/hotel-du-port.jpg);
-    }
-    #hotel-mouettes {
-        content: url(images/hebergements/hotel-les-mouettes.jpg);
-    }
-    #hotel-mer {
-        content: url(images/hebergements/hotel-de-la-mer.jpg);
-    }
-    #auberge-panier {
-        content: url(images/hebergements/auberge-le-panier.jpg);
-    }
-    #hotel-amina {
-        content: url(images/hebergements/hotel-chez-amina.jpg);
     }
