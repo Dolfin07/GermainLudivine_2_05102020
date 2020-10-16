@@ -22,7 +22,7 @@ h2, h3, h4, span {
     color: #f2f2f2;
 }
 
-        /*-------Nav flex row 2 lines-------- */
+        /*-------Nav-------- */
 nav {
     display: flex;
     flex-wrap: wrap;
@@ -62,7 +62,7 @@ nav a {
     font-family: 'Raleway-ExtraBold', sans-serif;
 }
 
-        /*-------Search flex row one line--------- */
+        /*-------Search--------- */
 
 .container-search {
     width: 90%;
@@ -111,7 +111,7 @@ input::placeholder {
     margin-left: -2%;
 }
 
-        /*--------Filter flex row one line with flex  for icone + name-------- */
+        /*--------Filter-------- */
 
 .container-filter {
     display: flex;
@@ -386,12 +386,10 @@ footer div p {
 
 /*---------------------------------------------------Média queries -----------------------------------------------------*/
 
-
 /*------------------------------------------- TABLET------------------------------------------------------------------*/
 @media all and (min-width: 768px) {
-
     
-/* ------------------------Search--------------------- */
+/* --------------Search--------------- */
     
     .container-search {
         margin-left: 3%;
@@ -444,7 +442,7 @@ footer div p {
         visibility: hidden;
     }
     
-    /*-----------------Filter--------------------- */ 
+    /*-----------------Filter---------------------*/ 
     
     .container-filter {
         margin-left: 3%;
@@ -548,7 +546,7 @@ footer div p {
     .card-info-popu p {
         font-size: 1em;
     }
-/*------------------------Activities------------------------*/
+/*----------------Activities----------------*/
 
     .title-activity {
         margin: 5% 0 2% 5%;
@@ -568,7 +566,7 @@ footer div p {
         margin-bottom: 2%;
     }
     
-/* -------------------footer-----------------------*/
+/* -------------------footer--------------*/
     
     footer {
         display: flex;
@@ -664,6 +662,7 @@ footer div p {
     
     .search button {
         padding: 1%;
+        padding-right: 2%;
         width: auto;
     }
     
@@ -774,7 +773,7 @@ footer div p {
     }
     
     .card-info-location h4 {
-        font-size: 1.3rem;
+        font-size: 1.1rem;
     }
     
     .card-info-location p {
@@ -792,7 +791,7 @@ footer div p {
     .title-popu{
         width: 100%;
         margin-top: 8%;
-        margin-bottom: 9%;
+        margin-bottom: 2%;
     }
     
     .container-popu {
@@ -804,20 +803,23 @@ footer div p {
     }
     
     .card-popu {
-        margin-right: 0;
         flex-direction: row;
+        justify-content: space-around;
+        margin-top: 3%;
+        margin-right: 0;
+        padding-right: 10%;
     }
     
     .card-popu h4 {
-        font-size: 1.3rem;    
+        font-size: 1.1rem;    
     }
     
     .card-popu picture {
-        width: 80%;
+        width: 50%;
     }
     
     .card-popu img {
-        width: 80%;
+        width: 70%;
         border-radius: 25px 0 0 25px;
     }
     .card-info-popu {
@@ -830,7 +832,7 @@ footer div p {
     }
     
     .card-info-popu div {
-        margin-top: 15%;
+        margin-top: 20%;
     }
 
     /*------------------------Activities------------------------*/
@@ -888,7 +890,7 @@ footer div p {
     }
     
     .activity-card h4 {
-        font-size:;
+        font-size: .9em;
         margin-top: 2%;;
     }
     /* -------------------footer-----------------------*/
