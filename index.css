@@ -52,6 +52,7 @@ nav a {
 #nav-location {
     width: 50%;
     color: #0065fc;
+    font-weight: 500;
     border-bottom: 1px solid #0065fc;
     padding-bottom: 4%;
 }
@@ -66,7 +67,7 @@ nav a {
     width: 50%;
     color: #0065fc;
     padding-right: 5%;
-    font-family: 'Raleway-ExtraBold', sans-serif;
+    font-weight: 900;
 }
 
         /*-------Search--------- */
@@ -97,17 +98,16 @@ h1 {
 
 input {
     width: 70%;
-    font-family: 'Raleway-ExtraBold', sans-serif;
+    font-weight: 700;
     border-top: 1px solid #f2f2f2;
     border-bottom: 1px solid #f2f2f2;
     border-left: none;
     border-right: none;
-    padding-left: 2%;
+    padding: 5%;
 }
 
 input::placeholder {
-    font-family: 'Raleway-ExtraBold', sans-serif;
-    font-size: 1.2em;
+    font-size: 1.3em;
     color: black;
 }
 
@@ -136,7 +136,7 @@ input::placeholder {
 .filter-title {
     width: 100%;
     font-size: 1.2rem;
-    font-family: 'Raleway-ExtraBold', sans-serif;
+    font-weight: 600;
     align-self: center;
     margin-bottom: 2%;
 }
@@ -161,8 +161,8 @@ input::placeholder {
 }
 
 .btn span {
-    font-family: 'Raleway-ExtraBold', sans-serif;
-    font-size: 1.2rem;
+    font-weight: 600;
+    font-size: 1rem;
     white-space: nowrap;
     padding-left: 1.5rem;
     padding-right: 1rem;
@@ -176,13 +176,14 @@ input::placeholder {
 }
 
 .fa-circle {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
     color: #deebff;
     margin-left: -1%;
 }
 
 .fa-child {
-    margin-left: -1.8rem;
+    font-size: 1.2rem;
+    padding-left: -1.8rem;
 }
 
 .fa-heart {
@@ -218,14 +219,19 @@ input::placeholder {
     align-items: center;
     width: 100%;
     background-color: #f2f2f2;
-    padding: 12% 5% 9% 5%;
+    padding: 10% 5% 9% 5%;
 }
 
 .title-popu {
+    font-size: .9rem;
     display: flex;
     justify-content: space-between; 
     width: 100%;
-    margin-bottom: 5%;
+    margin-bottom: 7%;
+}
+
+.fa-chart-line {
+    font-size: 1.5rem;
 }
 
 .card-popu {
@@ -242,7 +248,7 @@ input::placeholder {
 
 .card-popu picture {
     display: inline-block;
-    width: 40%;
+    width: 50%;
 }
 
 .card-popu img {
@@ -259,6 +265,8 @@ input::placeholder {
 
 .card-info-popu h3 {
     font-size: 1rem;
+    padding-top: .9rem;
+    padding-bottom: .3rem;
 }
 
 .card-info-popu p {
@@ -272,7 +280,7 @@ input::placeholder {
 
 .card-info-popu div {
     display: flex;
-    margin-top: 2.5rem;
+    margin-top: 2.3rem;
 }
 
 .card-info-popu div svg {
@@ -320,9 +328,11 @@ input::placeholder {
     margin: 1%;
     margin-left: 4%;
     padding: 2%;
+    padding-top: 0;
 }
 
 .card-info-location h3 {
+    padding-top: 0;
     font-size: 1rem;
 }
 
@@ -355,6 +365,7 @@ input::placeholder {
     margin-top: 7%;
     margin-bottom: 16%;
     margin-left: 5%;
+    font-weight: 600;
 }
 
         /*--------Activities--------- */
@@ -366,6 +377,7 @@ input::placeholder {
 }
 
 .title-activity {
+    font-size: 1.4rem;
     margin-bottom: 7%;
     margin-left: 5%;
 }
@@ -412,28 +424,23 @@ input::placeholder {
 footer {
     width: 100%;
     background-color: #f2f2f2;
-    padding: 5%;
-    padding-top: 4.5%;
+    padding: 4% 5% 1% 5%;
     margin: 0;
 }
 
 footer div h2 {
-    font-size: 1rem;
-    padding-bottom: 5%;
+    font-size: 1.1rem;
+    padding-bottom: 5.5%;
 }
 
 ul li {
     list-style: none;
-    padding-bottom: 2%;
+    padding-bottom: 4%;
 }
 
 footer div {
     margin: 10%;
     margin-left: 0;
-}
-
-footer div p {
-    padding-bottom: 3%;
 }
 
 /*---------------------------------------------------Média queries -----------------------------------------------------*/
@@ -448,9 +455,9 @@ footer div p {
     }
     
     .container-search h1 {
-        font-size: 1.8rem;
-        margin-top: 6%;
-        margin-bottom: 2%;
+        font-size: 1.4rem;
+        margin-top: 2%;
+        margin-bottom:1%;
     }
 
     .search-flex {
@@ -460,17 +467,17 @@ footer div p {
     
     #localisation {
         padding: 2% 2%;
+        padding-bottom: 5px;
         margin-left: 0;
     }
     
     input {
-        padding: .5% 3%;
-        padding-left: 2%;
+        padding: .6% 3%;
         width: 50%;
     }
     
     input::placeholder {
-        font-size: 1.4rem;
+        font-size: 1.1rem;
     }
     
     .search button {
@@ -494,7 +501,7 @@ footer div p {
     /*-----------------Filter---------------------*/
     
     .filter-title {
-        font-size: 1.3rem;
+        font-size: 1.1rem;
         margin-top: 4%;
         margin-bottom: 0
     }
@@ -522,10 +529,10 @@ footer div p {
     }
     
     .container-location h2 {
-        font-size: 1.7rem;
+        font-size: 1.4rem;
         width: 100%;
         margin-bottom: 2%;
-        margin-top: 8%;
+        margin-top: 2rem;
         padding-left: 2%;
     }
     
@@ -539,7 +546,7 @@ footer div p {
     }
     
     .card-info-location h3{
-        font-size: 1.3rem;
+        font-size: 1.1rem;
         margin-top: 0;
     }
     
@@ -548,7 +555,7 @@ footer div p {
     }
     
     #plus {
-        font-size: 1.4em;
+        font-size: 1.1em;
         margin-top: 2%;
         margin-bottom: 7%;
     }
@@ -568,17 +575,17 @@ footer div p {
     
     .title-popu {
         width: 100%;
-        margin-top: 8%;
+        margin-top: 5%;
         margin-bottom: 0;
     }
     
     .title-popu h2 {
-        font-size: 1.6rem;
+        font-size: 1.4rem;
     }
 
     .card-popu {
         flex-direction: column;
-        margin-top: 9%;
+        margin-top: 5%;
     }
     
     .card-popu picture {
@@ -595,7 +602,7 @@ footer div p {
     }
     
     .card-info-popu h3 {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         margin-top: 3%;
         margin-left: 0;
     }
@@ -611,7 +618,7 @@ footer div p {
 
     .title-activity {
         margin: 0 0 2% 5%;
-        font-size: 1.7rem;
+        font-size: 1.4rem;
     }
     
     .activity-card img{
@@ -619,7 +626,7 @@ footer div p {
     }
     
     .activity-card h3 {
-        font-size: 1.2em;
+        font-size: 1.1em;
         margin-top: 0;
         margin-bottom: 2%;
     }
@@ -629,7 +636,7 @@ footer div p {
     footer {
         display: flex;
         justify-content: space-between;
-        width: 100%;
+        width: 103%;
         font-size: 1rem;
         padding-top: 0;
         padding-left: 3%;
@@ -645,6 +652,7 @@ footer div p {
         font-family: 'Raleway-ExtraBold', sans-serif;
         font-size: 1.3rem;
     }
+}
     
 /*---------------------------------------------------- DESKTOP -------------------------------------------------------------*/
 @media all and (min-width: 1024px) {
@@ -701,7 +709,10 @@ footer div p {
     
     /* ------------------------Search--------------------- */
     h1 {
-        margin-top: 3%;
+        margin-top: 0;
+        padding-top: 0;
+        font-size: 20px;
+        font-weight: 600;
     }
     
     .search {
@@ -819,6 +830,7 @@ footer div p {
     }
 
     .container-location h2 {
+        
         margin-bottom: 3%;
         margin-top: 3%;
         margin-left: 1%;
@@ -849,7 +861,8 @@ footer div p {
     }
     
     .card-info-location p {
-        font-size: .8rem;;
+        font-size: .8rem;
+        padding: 3% 0%;
     }
     
     #plus {
@@ -871,7 +884,7 @@ footer div p {
         width: 30%;
         margin-left: 0;
         margin-right: 3%;
-        padding-left: 1.5%;
+        padding: 0 1.5% 3% 1.5%;
         padding-right: 1.5%;
     }
     
@@ -892,7 +905,7 @@ footer div p {
     
     .card-popu img {
         width: 100%;
-        border-radius: 25px 0 0 25px;
+        border-radius: 20px 0 0 20px;
     }
     .card-info-popu {
         width: 60%;
@@ -904,7 +917,7 @@ footer div p {
     }
     
     .card-info-popu div {
-        margin-top: 20%;
+        margin-top: 10%;
     }
 
     /*------------------------Activities------------------------*/
@@ -975,6 +988,7 @@ footer div p {
     /* -------------------footer-----------------------*/
     
     footer {
+        width: 100%;
         display: flex;
         justify-content: space-between;
         font-size: 1rem;
@@ -982,13 +996,17 @@ footer div p {
         padding-left: 3%;
     }
     
+    footer div h2 {
+        font-size: 1.1rem;
+    }
+    
     footer div {
         margin: 0;
         margin-right: 15%;
         margin-top: 4%;
-        margin-bottom: -3%;
     }
     
     footer li {
         padding-top: 3%;
     }
+}
